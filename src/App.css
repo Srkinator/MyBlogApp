@@ -1,0 +1,43 @@
+textarea {
+  height: 300px !important;
+}
+
+.authImg {
+  padding: 0px;
+}
+hr {
+  margin: 0px;
+}
+img{
+  width: 100%;
+  height: auto;
+  padding-top: 20%;
+}
+.nav-wrapper{
+  background-color: #3b5998;	
+}
+
+h1, h2, h3, h4, h5 {
+  color: #3b5998;	
+}
+
+.hoverable {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+body{
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLZp-0Zvi5Rg98VKc1TUvMi2QF0DVFjnnK9rYAbBfOCTjOwx8d-A") repeat;
+}
+html {
+  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+
+@media screen and (max-width: 400px) {
+  .nav-wrapper{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+  }
+}
