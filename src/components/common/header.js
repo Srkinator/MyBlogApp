@@ -1,15 +1,12 @@
 import React from "react";
-import Timer from "./timer";
 import { Link } from "react-router-dom";
-import Form from "../posts/form";
-
 
 const Header = function () {
     return (
         <div>
             <nav>
                 <div className="nav-wrapper">
-                    <a href="#" className="left brand-logo">My Blog APP</a>
+                    <a href="#" className="left brand-logo">Blog</a>
                     <ul className="right">
                         <li><Link to='/Authors'>Authors</Link></li>
                         <li><Link to='/'>Home</Link></li>

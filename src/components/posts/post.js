@@ -1,7 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import SinglePostInfo from "./singlePostInfo";
 
 const Post = function (props) {
     return (
@@ -13,13 +11,5 @@ const Post = function (props) {
         </Link>
     );
 };
-
-// Post.defaultProps = {
-//     post: {title: "DEFAULT TITTLE"}
-// };
-
-// Post.propTypes = {
-//     title: PropTypes.string.isRequired
-// };
 
 export default Post;

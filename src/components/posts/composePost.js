@@ -69,7 +69,7 @@ class CreatePost extends Component {
         return (
             <div>
                  <p onClick={this.props.history.goBack} className="waves-effect waves-light btn"> Back </p>
-                <h1>Create new form</h1>
+                <h1>Create new post</h1>
                 <Form handler={this.collectedInfo} />
             </div>
         );

@@ -26,7 +26,7 @@ class SinglePostInfo extends React.Component {
             return null;
         }
         
-        postId = postId || this.props.match.params.id;
+        postId = this.props.match.params.id || postId;
 
         fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
             .then(result => result.json())
@@ -54,6 +54,8 @@ class SinglePostInfo extends React.Component {
 
     displayMyPost() {
             let post = JSON.parse(localStorage.getItem("posts"));
+            console.log(post);
+            console.log(this.props.match.params.id);
             post.map((spost) => {
                 if (spost.id == this.props.match.params.id) {
                     this.setState({
@@ -87,7 +89,7 @@ class SinglePostInfo extends React.Component {
                     <p onClick={this.props.history.goBack} className="waves-effect waves-light btn"> Back </p>
                     <h3 style={{ textAlign: "center" }}>{this.state.posts.title} no.{this.props.match.params.id}</h3>
                     <Link to={"/SingleAuthorInfo/" + this.state.posts.userId}>
-                        <h5 style={{ textAlign: "center", marginBottom: "100px" }}>{this.state.authors.name}</h5>
+                        <h5 style={{ textAlign: "center", marginBottom: "100px" }}> by {this.state.authors.name}</h5>
                     </Link>
                     <p style={{ textAlign: "center", marginBottom: "100px" }}>{this.state.posts.body}</p>
                     <hr />

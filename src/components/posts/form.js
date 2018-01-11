@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 class Form extends Component {
     constructor(props) {
@@ -59,7 +58,6 @@ class Form extends Component {
                                 onChange={this.updateBody}
                                 onKeyUp={this.updateBody}
                                 onPaste={this.updateBody}
-                                value={this.state.title}
                                 value={this.state.body}
                                 id="textarea1"
                                 className="materialize-textarea"
@@ -68,7 +66,7 @@ class Form extends Component {
                             <label htmlFor="textarea1">Post</label>
                         </div>
                     </div>
-                        <button className="btn waves-effect waves-light" type="submit" onClick={this.collectFormData}>Save</button>
+                        <button className="btn waves-effect waves-light" type="submit" onClick={this.collectFormData}>Create Post</button>
                 </form>
             </div>
         );
