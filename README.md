@@ -1,5 +1,5 @@
-﻿# Reading-Club
-Reading Club is a SPA boilerplate built using data provided by JSONPlaceholder expandable by utilizing local storage. 
+﻿# My Blog App
+Blog App is a SPA boilerplate built using data provided by JSONPlaceholder expandable by utilizing local storage. 
 Bring your own authors, start creating content and utilize this framework.
 
 DEMO: [Blog App](https://srkinator.github.io/MyBlogApp/)
